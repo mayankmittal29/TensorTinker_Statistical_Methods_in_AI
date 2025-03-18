@@ -1,4 +1,4 @@
-# 🧠 TensorTinker Statistical Methods in AI 🧠
+![image](https://github.com/user-attachments/assets/fc91111b-f826-48a1-adf3-29469a27026e)![image](https://github.com/user-attachments/assets/7c18edb9-48ca-4ec2-9751-9009030ed131)# 🧠 TensorTinker Statistical Methods in AI 🧠
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-orange)
@@ -42,10 +42,11 @@ Implementing a Multi-Layer Perceptron for classifying handwritten symbols from h
 
 #### Implementation Details
 - Custom MLP class with configurable hyperparameters:
-  - Learning rate
+  - Learning rate - [0.01, 0.001]
   - Activation functions (Sigmoid, Tanh, ReLU implemented from scratch)
   - Optimizers (SGD, Batch GD, Mini-Batch GD implemented from scratch)
-  - Number and size of hidden layers
+  - Number and size of hidden layers - [[128], [64, 32], [128, 64, 32]]
+  - batch sizes - [32, 64, 128]
 - Methods for forward and backward propagation
 - Training process with various configurations
 
@@ -57,11 +58,10 @@ Implementing a Multi-Layer Perceptron for classifying handwritten symbols from h
 
 #### Results and Visualizations
 
-[Space for hyperparameter tuning results visualization]
+![Plot](best_summary_2.1.png)
 
-[Space for accuracy and loss curves]
-
-[Space for fold-wise performance metrics]
+##### Best configuration: Sigmoid, sgd, layers=[64, 32], lr=0.01
+##### Mean accuracy: 0.6238±0.0064
 
 ### 🏠 1.2 MLP Regressor for Price Prediction in Bangalore
 
@@ -76,15 +76,8 @@ Building an MLP regressor to predict housing prices in Bangalore based on featur
 1. Handling missing values and outliers
 2. Feature selection and engineering
 3. Normalization and standardization
-4. Train-validation-test split
-
-#### Summary Statistics of Clean Dataset
-
-[Space for summary statistics table]
-
-#### Label Distribution Visualization
-
-[Space for label distribution graph]
+4. Visualisations like Pie-charts, scatter-plot, Box-Plot, Correlation Heatmap etc
+5. Train-validation-test split
 
 #### Model Implementation
 - Same MLP architecture as the classifier but adapted for regression
@@ -98,11 +91,8 @@ Building an MLP regressor to predict housing prices in Bangalore based on featur
 
 #### Results
 
-[Space for hyperparameter tuning results]
-
-[Space for training curves]
-
-[Space for performance metrics comparison table]
+![Plot](2.2_best.png)
+#### All other results of tuning are in Q2.2_files/q2.2_report.csv and cleaned csv also.
 
 ### 📰 1.3 Multi-Label News Article Classification
 
@@ -130,12 +120,8 @@ Developing an MLP model to tag news articles with multiple topics simultaneously
 - Precision, Recall, F1-score (for multi-label)
 
 #### Results
-
-[Space for hyperparameter tuning results]
-
-[Space for training curves]
-
-[Space for evaluation metrics visualization]
+![Plot](2.3_best.png)
+##### Results of all hyperparameters tuned are in Q2.3_files/results_2.3.csv
 
 ## 🔔 2. Gaussian Mixture Model
 
