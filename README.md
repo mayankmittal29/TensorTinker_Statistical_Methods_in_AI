@@ -359,24 +359,42 @@ Implementing and analyzing a Variational Autoencoder (VAE) on MNIST dataset.
 
 #### Latent Space Visualization
 
-[Space for latent space visualization]
+![Plot](6_plots/latent_space_latent_space_with_full_vae_(bce).png)
 
 #### Ablation Studies
 1. Training without reconstruction loss
-   [Space for latent space visualization without reconstruction loss]
+![Plot](6_plots/latent_space_latent_space_without_reconstruction_loss.png)
 
 2. Training without KL divergence loss
-   [Space for latent space visualization without KL divergence]
+![Plot](6_plots/latent_space_latent_space_without_kl_loss.png)
 
 #### Latent Space Sampling
 
-[Space for reconstructions from 2D Gaussian grid samples]
+![Plot](6_plots/grid_reconstructions_grid_reconstructions_with_full_vae_(bce).png)
+![Plot](6_plots/grid_reconstructions_grid_reconstructions_without_reconstruction_loss.png)
+![Plot](6_plots/grid_reconstructions_grid_reconstructions_without_kl_loss.png)
+![Plot](6_plots/grid_reconstructions_grid_reconstructions_with_mse_loss.png)
 
 #### Loss Function Comparison
 - Binary cross-entropy vs. MSE reconstruction loss
 - Visual comparison of generated samples
 
-[Space for MSE loss reconstruction grid]
+#### Visuals of generated smaples when full VAE with BCE loss and KL loss
+![Plot](6_plots/with_bce.png)
+#### Visual of generated smaples when VAE without reconstruction loss and but KL loss
+
+![Plot](6_plots/without_rec.png)
+#### Visual of generated smaples when full VAE with BCE loss and without KL loss
+
+![Plot](6_plots/without_kl.png)
+#### Visual of generated smaples when full VAE with MSE loss and KL loss
+
+![Plot](6_plots/with_mse.png)
+
+![Plot](6_plots/latent_space_latent_space_with_mse_loss.png)
+
+![Plot](6_plots/training_loss_comparison.png)
+![Plot](6_plots/test_loss_comparison.png)
 
 ## 📦 Installation Instructions
 
@@ -384,64 +402,7 @@ Implementing and analyzing a Variational Autoencoder (VAE) on MNIST dataset.
 # Clone the repository
 git clone https://github.com/your-username/TensorTinker_Statistical_Methods_in_AI.git
 cd TensorTinker_Statistical_Methods_in_AI
-
-# Create a virtual environment (optional but recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
 ```
-
-## 🚀 Usage
-
-### Running MLP Classifier
-
-```bash
-python mlp_classifier.py --data_path /path/to/symbol/dataset --lr 0.01 --epochs 100 --hidden_layers 128,64 --activation relu --optimizer sgd
-```
-
-### Running MLP Regressor
-
-```bash
-python mlp_regressor.py --data_path /path/to/bangalore/dataset --lr 0.005 --epochs 150 --hidden_layers 64,32 --activation tanh --optimizer mini_batch
-```
-
-### Running MLP Multi-Label Classifier
-
-```bash
-python mlp_multilabel.py --data_path /path/to/news/dataset --lr 0.01 --epochs 100 --hidden_layers 512,256 --activation relu --optimizer mini_batch
-```
-
-### Running GMM Segmentation
-
-```bash
-python gmm.py --image_path /path/to/mri/image --n_components 3
-```
-
-### Running PCA Analysis
-
-```bash
-python pca_analysis.py --n_samples 1000 --dimensions 500,300,150,30
-```
-
-### Running Autoencoder
-
-```bash
-python autoencoder.py --normal_digit [YOUR_ROLL_NUMBER_LAST_DIGIT] --bottleneck_dims 20,10,5
-```
-
-### Running VAE
-
-```bash
-python vae.py --latent_dim 2 --loss bce
-```
-
-## 📈 Results
-
-[Space for final results and conclusions]
-
----
 
 ⭐ Feel free to star this repository if you find it useful! ⭐
 
