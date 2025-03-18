@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/fc91111b-f826-48a1-adf3-29469a27026e)![image](https://github.com/user-attachments/assets/7c18edb9-48ca-4ec2-9751-9009030ed131)# 🧠 TensorTinker Statistical Methods in AI 🧠
+# 🧠 TensorTinker Statistical Methods in AI 🧠
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-orange)
