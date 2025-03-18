@@ -285,7 +285,53 @@ Implementing an autoencoder for anomaly detection in MNIST digits.
 
 #### Reconstruction Error Analysis
 
-[Space for reconstruction error histogram]
+### For dimension 8
+![Plot](5_plots/training_loss_dim_8.png)
+![Plot](5_plots/precision_recall_curve_dim_8.png)
+![Plot](5_plots/error_histogram_dim_8.png)
+![Plot](5_plots/error_histogram_dim_8.png)
+![Plot](5_plots/error_by_digit_dim_8.png)
+![Plot](5_plots/reconstructions_dim_8.png)
+
+#### Performance Metrics for Bottleneck Dimension = 8
+##### Optimal Threshold: -24.726648
+##### Precision: 0.6364
+##### Recall: 0.5631
+##### F1-Score: 0.5975
+##### AUC-ROC: 0.9185
+##### Accuracy: 0.9018
+
+### For dimension 16
+![Plot](5_plots/training_loss_dim_16.png)
+![Plot](5_plots/precision_recall_curve_dim_16.png)
+![Plot](5_plots/error_histogram_dim_16.png)
+![Plot](5_plots/error_histogram_dim_16.png)
+![Plot](5_plots/error_by_digit_dim_16.png)
+![Plot](5_plots/reconstructions_dim_16.png)
+
+#### Performance Metrics for Bottleneck Dimension = 16
+##### Optimal Threshold: -9.943974
+##### Precision: 0.7848
+##### Recall: 0.6833
+##### F1-Score: 0.7305
+##### AUC-ROC: 0.9662
+##### Accuracy: 0.9018
+
+### For dimension 32
+![Plot](5_plots/training_loss_dim_32.png)
+![Plot](5_plots/precision_recall_curve_dim_32.png)
+![Plot](5_plots/error_histogram_dim_32.png)
+![Plot](5_plots/error_histogram_dim_32.png)
+![Plot](5_plots/error_by_digit_dim_32.png)
+![Plot](5_plots/reconstructions_dim_32.png)
+
+#### Performance Metrics for Bottleneck Dimension = 32
+##### Optimal Threshold: -9.622127
+##### Precision: 0.6948
+##### Recall: 0.7301
+##### F1-Score: 0.7120
+##### AUC-ROC: 0.9640
+##### Accuracy: 0.9018
 
 #### Anomaly Detection
 - Threshold selection based on reconstruction error distribution
@@ -297,10 +343,10 @@ Implementing an autoencoder for anomaly detection in MNIST digits.
 
 #### Results
 
-[Space for ROC curves]
+![Plot](5_plots/roc_curves.png)
 
-[Space for performance metrics table]
-
+![Plot](5_plots/metrics_comparison.png)
+#### The optimal bottleneck dimension appears to be 16, with the highest AUC (0.966) and a good balance of precision (0.785) and recall (0.683)
 ## 🧬 5. Variational Autoencoder
 
 #### Problem Statement
