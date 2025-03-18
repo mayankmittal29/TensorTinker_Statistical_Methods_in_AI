@@ -153,17 +153,21 @@ Implementing GMM from scratch and using it to segment gray matter, white matter,
 - Visualization of segmentation results
 - Comparison with original segmentation
 
-#### Segmentation Results
-
-[Space for segmentation visualization]
-
-[Space for pointwise accuracy metrics]
-
+#### Segmentation Results After applying GMM on brain MRI scan image:- 
+#### Original Axial and its Segmented View
+![Original](Q3_files/original_axial.png)
+![Segmented](Q3_files/axial.png)
+#### Original Coronal and its Segmented View
+![Original](Q3_files/original_coronal.png)
+![Segmented](Q3_files/coronal.png)
+#### Original Sagittal and its Segmented View
+![Original](Q3_files/original_sagittal.png)
+![Segmented](Q3_files/sagittal.png)
 #### Analysis
 
-[Space for frequency vs. intensity graph]
+![Frequency vs Intensity](Q3_files/Frequency_intensity.png)
 
-[Space for GMM distribution visualization]
+![GMM Distribution](Q3_files/GMM_distributions.png)
 
 #### Misclassification Analysis
 Analysis of regions with highest misclassification based on intensity distributions and GMM model characteristics.
