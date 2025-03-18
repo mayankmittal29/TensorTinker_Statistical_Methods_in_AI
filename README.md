@@ -186,17 +186,17 @@ Analysis of regions with highest misclassification based on intensity distributi
 - MNIST dataset with 1000 randomly sampled images (uniform class distribution)
 
 #### Dimensionality Reduction
-- Projecting data to 500, 300, 150, and 30 dimensions
+- Projecting data to 500, 300, 150, 30, 25, 20, 15, 10, 5 and 2 dimensions
 
 #### Visualization and Analysis
 
-[Space for explained variance vs. number of components graph]
-
-[Space for 2D visualization using first 2 PCs]
+![Plot](4_plots/Cumulative_Variance.png)
+![Plot](4_plots/Variance_by_component.png)
+![Plot](4_plots/2-pricipal_components.png)
 
 #### Image Reconstruction
 
-[Space for original vs. reconstructed images comparison]
+![Plot](4_plots/PCA.png)
 
 ### 📊 3.2 Classification Performance with vs without dimensionality reduction
 
@@ -211,10 +211,62 @@ Analysis of regions with highest misclassification based on intensity distributi
 - Recall
 
 #### Results
+![Plot](4_plots/PCA_accuracy.png)
 
-[Space for performance metrics comparison table]
+Baseline Classification (No PCA)
+Accuracy: 0.9746
+Precision: 0.9746
+Recall: 0.9746
 
-[Space for performance visualization across different dimensions]
+Classification with 500 PCA Components
+Accuracy: 0.9332
+Precision: 0.9335
+Recall: 0.9332
+
+Classification with 300 PCA Components
+Accuracy: 0.9550
+Precision: 0.9550
+Recall: 0.9550
+
+Classification with 150 PCA Components
+Accuracy: 0.9681
+Precision: 0.9683
+Recall: 0.9681
+
+Classification with 30 PCA Components
+Accuracy: 0.9804
+Precision: 0.9804
+Recall: 0.9804
+
+Classification with 25 PCA Components
+Accuracy: 0.9736
+Precision: 0.9736
+Recall: 0.9736
+
+Classification with 20 PCA Components
+Accuracy: 0.9728
+Precision: 0.9729
+Recall: 0.9728
+
+Classification with 15 PCA Components
+Accuracy: 0.9678
+Precision: 0.9679
+Recall: 0.9678
+
+Classification with 10 PCA Components
+Accuracy: 0.9358
+Precision: 0.9360
+Recall: 0.9358
+
+Classification with 5 PCA Components
+Accuracy: 0.7698
+Precision: 0.7741
+Recall: 0.7698
+
+Classification with 2 PCA Components
+Accuracy: 0.4727
+Precision: 0.4615
+Recall: 0.4727
 
 #### Analysis
 - Discussion on how PCA helps mitigate the curse of dimensionality
